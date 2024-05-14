@@ -5,7 +5,10 @@ import { Text, View } from "@/components/Themed";
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Behold! The oat abides! For now brothers, enjoy our oatic texts before the coming of Oatman.</Text>
+      <Text style={styles.title}>
+        "Behold! The oat abides! For now brothers, enjoy our oatic texts before
+        the coming of Oatman."
+      </Text>
     </View>
   );
 }
@@ -17,8 +20,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   title: {
-    fontSize: 20,
+    fontSize: 40,
     fontWeight: "bold",
+    padding: 50,
+    textAlign: "center",
   },
   separator: {
     marginVertical: 30,

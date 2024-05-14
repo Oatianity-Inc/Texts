@@ -49,10 +49,19 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="books"
         options={{
           title: "Books",
           tabBarIcon: ({ color }) => <TabBarIcon name="book" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="about"
+        options={{
+          title: "About Oatianity",
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="question-circle" color={color} />
+          ),
         }}
       />
     </Tabs>
