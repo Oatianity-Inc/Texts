@@ -5,7 +5,7 @@ import { Text, View } from "@/components/Themed";
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>The OATICAR, BOOK OF THE GROATS AND MORE</Text>
+      <Text style={styles.title}>Behold! The oat abides! For now brothers, enjoy our oatic texts before the coming of Oatman.</Text>
     </View>
   );
 }
