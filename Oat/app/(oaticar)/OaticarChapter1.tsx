@@ -11,8 +11,8 @@ export default function OaticarChapter1Screen() {
         <Text style={styles.title}>Chapter 1</Text>
         <View style={styles.padding}>
           The Seeding of the Eternal Oat
-          <View style={styles.padding}>
-            <Text>
+          <View style={styles.bodypadding}>
+        
               In the beginning, before the first rains or the first rays of the
               sun, there was the void - a fallow and infertile vacuum of
               nothingness. But then the Oat Primordial stirred, shook its
@@ -89,7 +89,7 @@ export default function OaticarChapter1Screen() {
               written in the first chapter of our most hallowed scripture - the
               Oaticar. Let all who partake of its infinite wisdom achieve oaten
               transcendence through complete subrigation to the Oat. Grainluz.
-            </Text>
+     
           </View>
         </View>
       </View>
@@ -113,7 +113,11 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontFamily: "SpaceMono",
   },
-
+  bodypadding: {
+    paddingTop: 5,
+    fontSize: 19,
+    fontFamily: "SpaceMono",
+  },
   title: {
     fontSize: 40,
     fontWeight: "bold",

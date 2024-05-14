@@ -1,19 +1,19 @@
 import { StatusBar } from "expo-status-bar";
-import { Platform, StyleSheet } from "react-native";
+import { Platform, StyleSheet, ScrollView } from "react-native";
 
 import { Text, View } from "@/components/Themed";
 import { configureLayoutAnimationBatch } from "react-native-reanimated/lib/typescript/reanimated2/core";
 
 export default function OaticarChapter3Screen() {
   return (
+    <ScrollView>
     <View style={styles.container}>
       <Text style={styles.title}> Chapter 2</Text>
-      <View style={styles.container}>
+      <View style={styles.padding}>
  
       The Lurching Lash of the First Quaker
 
- <View style={styles.container}>
-
+ <View style={styles.bodypadding}>
 After the transcendent oatation of the holy Oatriarch Ga'Nesha, a great schism threatened to unravel the unifying teachings of the one true Oat. Ga'Nesha's most devoted disciple, a humble huller named Seth'afa, found himself embroiled in a battle for the very soul of the fledgling Oatidoxy. 
 
 On one side were the enlightened Oatclinists who strictly followed the Oatriarch's original paobules and would accept no blasphemous devioations from her scripture. Opposing them were the Oathodoxors, radicals who insisted the Cycle of Oats could be reinterpreted and evolved for changing times.
@@ -59,6 +59,7 @@ Grainlujah! The Oat abides.
         </View>
 
     </View>
+    </ScrollView>
   );
 }
 
@@ -67,11 +68,24 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+    paddingTop: 5,
+    paddingHorizontal: 50,
+    textAlign: "left",
+    fontSize: 25,
+    fontFamily: "SpaceMono",
   },
-  
-       
+  padding: {
+    paddingTop: 5,
+    fontSize: 24,
+    fontFamily: "SpaceMono",
+  },
+  bodypadding: {
+    paddingTop: 5,
+    fontSize: 19,
+    fontFamily: "SpaceMono",
+  },
   title: {
-    fontSize: 20,
+    fontSize: 40,
     fontWeight: "bold",
   },
   separator: {
